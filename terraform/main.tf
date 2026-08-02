@@ -8,10 +8,10 @@ terraform {
 
   # Configures remote state storage and locking
   backend "s3" {
-    bucket         = "infra-state-management-bucket" 
+    bucket         = "infra-state-man-98797-8216" 
     key            = "jenkins/ec2/terraform.tfstate"
     region         = "us-east-1" 
-    dynamodb_table = "terraform-state-lock" 
+    dynamodb_table = "terraform-state-lock-8216" 
     encrypt        = true                  
   }
 }
